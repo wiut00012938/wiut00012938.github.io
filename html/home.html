@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/d638520dfa.js" crossorigin="anonymous"></script>
+    <title>Notebookoff</title>
+</head>
+<body>
+    
+    <header>
+        <div class="warning"><p>This website was created to fulfill Web Technology
+        module’s requirements and does not represent an actual company or service</p> </div>
+
+        <div class="first_header">
+            <a href="home.html"><img src="../images/logo.svg" alt="company_logo"></a>
+
+            <div class="search">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Search" id="mysearch">
+              <i class="fa-sharp fa-solid fa-xmark" onclick="document.getElementById('mysearch').value = ''"></i>
+            </div>
+            <!--3 additional links-->
+            <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                <div class="appear_text">
+                    <p>favourite products</p>
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+
+                <div class="appear_text">
+                    <p>see bucket</p>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+
+                <div class="appear_text">
+                    <p>customer account</p>
+                    <div id="login-btn" class="fas fa-user"></div>
+                </div>
+            </div>
+            <!--button for mobile devices for opening nav bar-->
+            <a class="btn_nav">
+                <div class="menulogo"></div>
+                <div class="menulogo"></div>
+                <div class="menulogo-animated"></div>
+            </a>
+        </div>
+        <!--nav bar for tablets and desctops-->
+        <nav>
+            <a href="home.html">home</a>
+            <a href="#featured">Laptops</a>
+            <a href="#arrivals">Accessuares</a>
+            <a href="#reviews">What's hot</a>
+            <a href="#blogs">Support</a>
+            <a href="aboutus.html">About us</a>
+        </nav>
+    </header>
+    <!--nav bar for mobile version-->
+    <nav class="mobile-nav">
+        <a href="#">Home</a>
+        <a href="#">Laptops</a>
+        <a href="#">Accessuars</a>
+        <a href="#">What's hot</a>
+        <a href="#">Support</a>
+        <a href="#">About us</a>
+    </nav>
+
+    
+    <section>
+      <div class="slider">
+        <div class="slides" id = "slides">
+          <!--slide images start-->
+          <div class="slide first">
+            <h1>Seeking laptop?</h1>
+            <p>Let our professional workers help to find the best one for you</p>
+            <button>Check now</button>
+          </div>
+          <div class="slide second">
+            <h1>Era</h1>
+            <p>of affordableness has come!</p>
+            <button>Let's start</button>
+          </div>
+          <div class="slide third">
+            <h1>Don't have enough funding now?</h1>
+            <p>We provide istalment payment plan. Get your product now, pay later!</p>
+            <button>Go shopping!</button>
+          </div>
+        </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+        <div class="navigation">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+        </div>
+            <!--automatic navigation end-->
+      </div>
+      <!--image slider end-->
+  </section>
+    <section class="new-arrivals" id="arrivals">
+      <h1>New Arrivals</h1>
+      <h2>Gaming Laptops</h2>
+      <div class="arrivals gaming">
+        <figure>
+          <img src="../images/arrival1.jpg" alt="arrival1">
+          <figcaption>ROG Zephyrous G14</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/arrival2.jpg" alt="arrival2">
+          <figcaption>Acer Nitro 5 2022</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/arrival3.jpg" alt="arrival3">
+          <figcaption>Razer Blade 15</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/arrival4.jpg" alt="arrival4">
+          <figcaption>Lenovo Legion 5 Pro</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/arrival5.jpg" alt="arrival5">
+          <figcaption>Asus ROG strix 17</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/arrival6.jpg" alt="arrival6">
+          <figcaption>MSI GS66 Stealth</figcaption>
+        </figure>
+      </div>
+      <button>Find more Details here</button>
+
+      <h2>Office Variants</h2>
+      <div class="arrivals office">
+        <figure>
+          <img src="../images/office1.png" alt="office1">
+          <figcaption>Acer Aspire 7</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/office2.jpg" alt="office2">
+          <figcaption>MacBook Pro</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/office3.png" alt="office3">
+          <figcaption>Acer Inspiration 3</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/office4.jpg" alt="office4">
+          <figcaption>Huawei Boost 5</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/office5.jpg" alt="office5">
+          <figcaption>Acer Aspire 5</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/office6.jpg" alt="office6">
+          <figcaption>Acer Swift 3</figcaption>
+        </figure>
+      </div>
+      <button>Find more Details here</button>
+    </section>
+    <section class="deal-of-day" id="daydeal">
+      <h1>Deal of the day</h1>
+      <div class="poster-wrapper">
+        <div class="poster-message">
+          <p>Purchase <span>RogStrix G15</span> with <span>ryzen 5600h and rtx3060</span> and get a mechanical keyboard HyperX Alloy Pro as bonus. Hurry Up! One day deal</p>
+          <button>Purchase now</button>
+        </div>
+        <div class="poster-deal">
+          <img src="../images/photodeal.jpg" alt="first_deal" width="500">
+          <img src="../images//photodeal2.png" alt="second_deal" width="500">
+        </div>
+      </div>
+    </section>
+    <main class="laptop-blog">
+      <h1>How to choose laptop exact for your case?</h1>
+      <ul>
+        <li class="accordion-trigger">To what things you need pay attention</li>
+        <article>
+          <h1>3 key elements</h1>
+          <h2>RAM</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sint eius esse, voluptatibus magnam consequuntur doloribus optio? Ea reiciendis commodi atque esse? Totam saepe non ipsum consequatur libero eos dolores!</p>
+          <h2>CPU</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolorem vitae exercitationem qui natus quas temporibus soluta molestias suscipit quis quisquam similique ratione officiis excepturi ab deserunt, unde dolores voluptatem.</p>
+          <h2>Video Card</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem, laboriosam perferendis consequuntur soluta illum nemo! Obcaecati sapiente inventore sunt nisi labore dignissimos sint tenetur in! Architecto ratione reiciendis in.</p>
+        </article>
+        <li class="accordion-trigger">For whom ultrabooks will be suitable</li>
+        <article>
+          <h1>3 key elements</h1>
+          <h2>Do you need lightness?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sint eius esse, voluptatibus magnam consequuntur doloribus optio? Ea reiciendis commodi atque esse? Totam saepe non ipsum consequatur libero eos dolores!</p>
+          <h2>Will you use it mainly for office?</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolorem vitae exercitationem qui natus quas temporibus soluta molestias suscipit quis quisquam similique ratione officiis excepturi ab deserunt, unde dolores voluptatem.</p>
+          <h2>Is screen touch necessary for you?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem, laboriosam perferendis consequuntur soluta illum nemo! Obcaecati sapiente inventore sunt nisi labore dignissimos sint tenetur in! Architecto ratione reiciendis in.</p>
+        </article>
+        <li class="accordion-trigger">When the office laptops will be enough?</li>
+        <article>
+          <h1>3 key elements</h1>
+          <h2>Do you play memory consuming games?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sint eius esse, voluptatibus magnam consequuntur doloribus optio? Ea reiciendis commodi atque esse? Totam saepe non ipsum consequatur libero eos dolores!</p>
+          <h2>Do you need lighness?</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolorem vitae exercitationem qui natus quas temporibus soluta molestias suscipit quis quisquam similique ratione officiis excepturi ab deserunt, unde dolores voluptatem.</p>
+          <h2>What about GPU?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem, laboriosam perferendis consequuntur soluta illum nemo! Obcaecati sapiente inventore sunt nisi labore dignissimos sint tenetur in! Architecto ratione reiciendis in.</p>
+        </article>
+        <li class="accordion-trigger">Why to choose gaming laptops?</li>
+        <article>
+          <h1>3 key elements</h1>
+          <h2>Powerfulness</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sint eius esse, voluptatibus magnam consequuntur doloribus optio? Ea reiciendis commodi atque esse? Totam saepe non ipsum consequatur libero eos dolores!</p>
+          <h2>Style</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolorem vitae exercitationem qui natus quas temporibus soluta molestias suscipit quis quisquam similique ratione officiis excepturi ab deserunt, unde dolores voluptatem.</p>
+          <h2>Features</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem, laboriosam perferendis consequuntur soluta illum nemo! Obcaecati sapiente inventore sunt nisi labore dignissimos sint tenetur in! Architecto ratione reiciendis in.</p>
+        </article>
+      </ul>
+    </main>
+    <footer>
+      <div class="contacts">
+        <h1 class="accordion-trigger">Our contacts</h1>
+        <p>+998 93 123-45-67</p>
+        <p>+998 91 123-45-67</p>
+        <p>+998 90 123-45-67</p>
+        <h2>Working hours</h2>
+        <p>Mon-Sun: from 9:00 till 21:00</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.086413066146!2d69.28119061571486!3d41.306983708938134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad59297d1cf%3A0xda0402847aed7b96!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0JLQtdGB0YLQvNC40L3RgdGC0LXRgNGB0LrQuNC5INCj0L3QuNCy0LXRgNGB0LjRgtC10YIg0LIg0KLQsNGI0LrQtdC90YLQtQ!5e0!3m2!1sru!2s!4v1582265112793!5m2!1sru!2s" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <div class="brands">
+        <h1 class="accordion-trigger">Availble brands of laptops</h1>
+        <ul>
+          <li><a href="#">Acer</a></li>
+          <li><a href="#">Honor</a></li>
+          <li><a href="#">Asus</a></li>
+          <li><a href="#">Razer</a></li>
+          <li><a href="#">MSI</a></li>
+          <li><a href="#">Lenovo</a></li>
+          <li><a href="#">Samsung</a></li>
+          <li><a href="#">DELL</a></li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h1 class="accordion-trigger">Quick links of the website</h1>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#featured">Laptops</a></li>
+          <li><a href="#arrivals">Accessuares</a></li>
+          <li><a href="#reviews">What's hot</a></li>
+          <li><a href="#blogs">Support</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#daydeal">Deal of the day</a></li>
+          <li><a href="#arrivals">New arrivals</a></li>
+        </ul>
+        </div>
+        <div class="social-links">
+          <h1>Our social links</h1>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <!--link for external js-->
+    <script src="../js/home.js"></script>
+</body>
+</html>

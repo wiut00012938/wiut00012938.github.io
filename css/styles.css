@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
+/*the header's section design was insipirated by the following video: https://youtu.be/6XmDdIRmg84 . The code itself was done by the student from sctratch*/
 :root{
     --blue: #297eff;
     --dark-color:#2573ef;
@@ -223,10 +223,9 @@ header nav.active{
     position: fixed;
 }
 
-
+/*horzintal bar with 3 slides. The design was inspired from the video: https://youtu.be/0wvrlOyGlq0. Only design was taken. The code was written by the student himself and differ from the video's.*/
 section{
     margin-top: 20px;
-    height: calc();
 }
 .slider{
     width: 90%;

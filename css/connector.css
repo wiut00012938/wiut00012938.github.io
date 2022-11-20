@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,600;0,700;1,500&display=swap');
+
+:root{
+    --blue: #297eff;
+    --dark-color:#2573ef;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+body{
+    height: 100vh;
+}
+*{
+    font-family:  'Roboto Mono', monospace;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+/*short header with logo for going to the main page of the side and support service mobile numer*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-color);
+}
+header div{
+    margin-right: 20%;
+}
+header div h1{
+    font-size: 4rem;
+}
+header div p{
+    font-size: 2rem;
+}
+header div p:hover{
+    color: rgb(236, 90, 90);
+    cursor: pointer;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*start of the connector styling*/
+.type_selector h1{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.section-wrapper{
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 1rem;
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.section-wrapper section{
+    width: 40%;
+    height: 20vh;
+    border: var(--border);
+    border-radius: 1rem;
+    background-color: #2573ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-wrapper section a{
+    color: white;
+    font-size: 3rem;
+}
+.section-wrapper section:hover{
+    transform: scale(110%);
+    border: var(--border-hover);
+}
+.section-wrapper section:hover a{
+    color: rgb(184, 43, 43);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 7px;
+    }
+    .section-wrapper{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 6px;
+    }
+}

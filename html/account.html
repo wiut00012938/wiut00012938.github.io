@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/account.css">
+    <script src="https://kit.fontawesome.com/d638520dfa.js" crossorigin="anonymous"></script>
+    <title>My Account</title>
+</head>
+<body>
+    <header>
+        <a href="../html/home.html"><img src="../images/logo.svg" alt="company_logo"></a>
+        <div class="contacts">
+            <h1>Have an issue? Contact us</h1>
+            <p>+998(99)222-22-22</p>
+        </div>
+    </header>
+    <aside>
+        <ul>
+            <li id="first">Personal Account information</li>
+            <li id="second">Purchased products</li>
+            <li id="third">warraty information</li>
+            <li id="fourth">Settings</li>
+        </ul>
+    </aside>
+    <section class="personal_account">
+        <h1>Personal information of customer</h1>
+        <article>
+            <h2>Avatar</h2>
+            <img src="../images/avatar.png" alt="avatar">
+        </article>
+        <article>
+            <h2>Name</h2>
+            <p>.......</p>
+        </article>
+        <article>
+            <h2>Surname</h2>
+            <p>.......</p>
+        </article>
+        <article>
+            <h2>Date Of Birth</h2>
+            <p>.......</p>
+        </article>
+        <article>
+            <h2>client id</h2>
+            <p>.......</p>
+        </article>
+        <article>
+            <h2>contact number</h2>
+            <p>.......</p>
+        </article>
+        <article>
+            <button id="sign_up">sign up</button>
+            <button id="sign_in">sign in</button>
+        </article>
+        <form action="" class="sign_in">
+            <i class="fa-solid fa-xmark" id="close_in"></i>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+             <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+    
+            <button type="submit">Sign in</button>
+            <label>
+            <input type="checkbox" checked="checked" name="save"> Make me signed in
+            </label>
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+        <form action="" class="sign_up">
+            <i class="fa-solid fa-xmark" id="close_up"></i>
+            <label for="email"><b>Username</b></label>
+            <input type="text" placeholder="Enter your email" name="email" required>
+
+             <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Create a new password" name="password" required>
+    
+            <button type="submit">Sign up</button>
+            <label>
+            <input type="checkbox" checked="checked" name="save"> I confirm with the organisation's policy
+            </label>
+        </form>
+    </section>
+    <section class="purchased_products">
+        <h1>List of purchased producs</h1>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <h2>There are not purched products</h2>
+    </section>
+    <section class="warraty_information">
+        <h1>The warraty information about the purchased products</h1>
+        <table>
+            <tr>
+                <th>product's name</th>
+                <th>product's id</th>
+                <th>link for deep information</th>
+            </tr>
+            <tr>
+                <td>.......</td>
+                <td>.......</td>
+                <td>.......</td>
+            </tr>
+            <tr>
+                <td>.......</td>
+                <td>.......</td>
+                <td>.......</td>
+            </tr>
+            <tr>
+                <td>.......</td>
+                <td>.......</td>
+                <td>.......</td>
+            </tr>
+        </table>
+    </section>
+    <section class="settings">
+        <h1>Account Settings</h1>
+        <div class="personal_info_change">
+            <h2>Personal Info</h2>
+            <p>Change the personal information of account</p>
+            <button>Change</button>
+        </div>
+        <div class="customization_mode_change">
+            <h2>Mode of the account section style</h2>
+            <p>Change the accout customization between light and dark mode</p>
+            <div class="option">
+                <input list="modes" id="mymode" name="myMainMode" />
+                <datalist id="modes">
+                    <option value="Light"></option>
+                    <option value="Dark"></option>
+                </datalist>
+            </div>
+        </div>
+        <div class="expired_products_show">
+            <h2>Expired Products History</h2>
+            <p>Show the products, which was expired</p>
+            <form action="">
+                <input type="radio" name="enable_history" value="include" id="yes">
+                <label for="yes">Include the history</label><br>
+                <input type="radio" name="disable_history" value="exclude" id="no">
+                <label for="no">Exclude the history</label><br>
+            </form>
+        </div>
+        <div>
+            <div class="status_change">
+                <h2>Status Of your purchased products</h2>
+                <p>Change the status and we will contact you regarding it</p>
+                <div class="option">
+                    <input list="statuses" id="status" name="myStatus" />
+                    <datalist id="statuses">
+                        <option value="No issues"></option>
+                        <option value="Needs technical recommendation"></option>
+                        <option value="Needs upgrade support"></option>
+                        <option value="Needs check"></option>
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/account.js"></script>
+</body>
+</html>

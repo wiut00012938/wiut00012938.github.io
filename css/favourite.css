@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,600;0,700;1,500&display=swap');
+
+:root{
+    --blue: #297eff;
+    --dark-color:#2573ef;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family:  'Roboto Mono', monospace;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+/*short header with logo for going to the main page of the side and support service mobile numer*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-color);
+}
+header div{
+    margin-right: 20%;
+}
+header div h1{
+    font-size: 4rem;
+}
+header div p{
+    font-size: 2rem;
+}
+header div p:hover{
+    color: rgb(236, 90, 90);
+    cursor: pointer;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*aside styling, as it is not */
+body{
+    display: 100vh;
+}
+div.middle-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+aside{
+    margin-left: 2%;
+    margin-top: 30vh;
+    border-right: 1px solid #2573ef;
+}
+aside dl dd{
+    font-size: 2rem;
+}
+aside dl dt{
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+#green{
+    background-color: rgb(93, 212, 93);
+}
+#yellow{
+    background-color: rgb(236, 236, 81);
+}
+#red{
+    background-color: rgb(209, 56, 56);
+}
+/*clickbate image styleing*/
+footer.gif-animated{
+    margin-left: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: move 10s linear infinite;
+}
+footer.gif-animated img{
+    width: 60%;
+    height: 30vh;
+    border-radius: 2rem;
+}
+@keyframes move{
+    0%{
+        margin-left: 20%;
+    }
+    25%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 20%;
+    }
+    75%{
+        margin-left: 40%;
+    }
+    100%{
+        margin-left: 20;
+    }
+}
+/* main section about the producted selected as favourite ones*/
+main{
+    margin-top: 30vh;
+    padding: 2rem;
+}
+main p, a{
+    font-size: 3rem;
+}
+main a{
+    color: var(--blue);
+}
+main a:hover{
+    transform: scale(1.1);
+    background-color: rgb(206, 69, 69);
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+@media (max-width: 900px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+    footer.gif-animated img{
+        width: 100%
+    }
+    footer.gif-animated{
+        margin-left: 0%;
+    }
+    @keyframes move{
+        0%{
+            margin-bottom: 0%;
+        }
+        25%{
+            margin-bottom: 10%;
+        }
+        50%{
+            margin-bottom: 20%;
+        }
+        75%{
+            margin-bottom: 10%;
+        }
+        100%{
+            margin-bottom: 0%;
+        }
+    }
+    div.middle-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.middle-wrapper aside, div.middle-wrapper main{
+        margin-top: 1rem;
+    }
+    header a img{
+        transform: scale(0.8);
+    }
+    div.middle-wrapper main a {
+        border: 1px solid #2573ef;
+    }
+}
+@media (max-width: 480px){
+    html{
+        font-size: 7px;
+    }
+}

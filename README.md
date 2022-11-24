@@ -1,0 +1,8 @@
+The following project is dedicated to a local company that sells laptop products and other accessories(https://notebookoff.uz/). It tried to provide all functionalities/sections for the website, including the home page/page for accessories/laptops, which were also divided into groups. 
+In terms of HTML structure, it tried to use semantic tags everywhere where it was necessary. Mainly the standard webpage consists of a header, section and footer with aside sometimes. The article tag became a child of the section. The standards have a description of the use of each tag but not the location and using this author did each product unit as a separate article that is wrapped by section. In the comprehension of the author, this makes the sense as each article contains a different product or theme. Moreover, as the article is separated from the section (it has its concerns about text importance), the article in the project may start with h1 even if h1 was introduced at the start of the section. 
+Turning to CSS, different styling methods/displays/position was used to make the website appropriate. Also, styling for mobile and tablets with different media sizes was developed.
+Lastly, JavaScript was used for different elements to make the website both interactive and responsive in terms of validation. In some cases, it may seem that the JS functions are not optimized, but for this level of study, it is also the functional method that works in practice.
+
+All designs that were taken as inspiration were referenced in the comments so that plagiarism is avoided.
+Link to the hosted website: https://tourmaline-sable-2bdd7a.netlify.app/ 
+Autor tried to host it also on GitHub with the domain github.io, but it was not successful and error 404 appears.

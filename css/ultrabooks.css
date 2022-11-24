@@ -317,6 +317,9 @@ main figure a img:hover, section figure a img:hover{
 .table1, .table2, .table3{
     display: none;
 }
+.table1.active, .table2.active, .table3.active{
+    display: flex;
+}
 .list_control{
     margin-left: 30%;
     display: flex;
@@ -334,9 +337,6 @@ main figure a img:hover, section figure a img:hover{
 }
 .list_control p.active{
     color: rgb(223, 82, 82);
-}
-section.active, main.active{
-    display: flex;
 }
 .ultrabooks_benefits{
     margin-top: 2rem;

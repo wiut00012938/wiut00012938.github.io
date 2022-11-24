@@ -31,35 +31,25 @@ mobile_btn.addEventListener('click', function(){
     menu.classList.toggle("active-menu");
 })
 /*making the controller of product lists*/
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2")
-const button3 = document.getElementById("button3")
+const first_table = document.querySelector("main.table1");
+const second_table = document.querySelector("section.table2");
+const third_table = document.querySelector("section.table3");
 
-const table1 = document.querySelector("section.table1");
-const table2 = document.querySelector("section.table2");
-const table3 = document.querySelector("section.table3");
-button1.addEventListener('click',function(){
-  document.querySelector("section.table1").classList.add('active');
-  this.classList.toggle('active');
-  table2.classList.remove('active');
-  table3.classList.remove('active');
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
+const button3 = document.getElementById("button3");
+button1.addEventListener('click', function(){
+  document.getElementById("first").classList.toggle("active");
+  document.getElementById("second").classList.remove("active");
+  document.getElementById("third").classList.remove("active");
 })
-button2.addEventListener('click',function(){
-  document.querySelector("section.table2").classList.add('active');
-  this.classList.toggle('active');
-  table1.classList.remove('active');
-  table3.classList.remove('active');
+button2.addEventListener('click', function(){
+  document.getElementById("first").classList.remove("active");
+  document.getElementById("second").classList.toggle("active");
+  document.getElementById("third").classList.remove("active");
 })
-button3.addEventListener('click',function(){
-  document.querySelector("section.table3").classList.add('active');
-  this.classList.toggle('active');
-  table2.classList.remove('active');
-  table1.classList.remove('active');
+button3.addEventListener('click', function(){
+  document.getElementById("first").classList.remove("active");
+  document.getElementById("second").classList.remove("active");
+  document.getElementById("third").classList.toggle("active");
 })
-/*accordion of footer for mobile devices*/
-const accordion = document.getElementsByClassName('accordion-trigger');
-for(i = 0; i < accordion.length ; i++){
-  accordion[i].addEventListener('click', function(){
-    this.classList.toggle('active');
-  })
-}

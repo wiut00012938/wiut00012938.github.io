@@ -146,9 +146,93 @@ section.featured-keyboards h1, section.featured_others h1{
 .featured-keyboards figure:hover, .featured_mouses figure:hover, .featured_others figure:hover{
     transform: scale(1.1);
 }
-/*featured mouses section mainly the same thig as with featured*/
 
-
+/*section for showing all products*/
+main.main-all-products h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.section-move-controller{
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.section-move-controller button{
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid rgb(43, 123, 214);
+}
+.section-move-controller button:hover{
+    background-color: rgb(212, 94, 94);
+    color: white;
+    transition: 0.4s;
+    border: none;
+    transform: scale(1.1);
+}
+.section-move-controller button.active{
+    background-color: rgb(212, 94, 94);
+    color: white;
+    transition: 0.4s;
+    border: none;
+    transform: scale(1.1);
+}
+.all-products-wrapper{
+    padding-top: 2rem;
+    margin-left: 2rem;
+    width: 500%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.all.all-products-wrapper.first{
+    margin-left: -100%;
+}
+.all-products-wrapper figure{
+    margin-right: 1rem;
+}
+.all-products-wrapper figure a img{
+    width: 55rem;
+    height: 40rem;
+}
+.controls-wrapper{
+    padding-top: 2rem;
+    text-align: center;
+    background-color: aliceblue;
+    padding-bottom: 2rem;
+}
+.controls-wrapper input{
+    transform: scale(2);
+    margin: 1rem;
+}
+.controls-wrapper input:hover{
+    background-color: rgb(54, 149, 228);
+}
+/*description part of product*/
+.all-products-wrapper figure figcaption{
+    font-size: 3rem;
+    text-align: center;
+}
+.all-products-wrapper figure div p{
+    font-size: 2rem;
+}
+.all-products-wrapper figure div a{
+    font-size: 2rem;
+    color: #2573ef;
+}
+.all-products-wrapper figure div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.all-products-wrapper figure div p{
+    visibility: hidden;
+}
+.all-products-wrapper figure div:hover p{
+    visibility: visible;
+}
 
 
 
@@ -189,6 +273,14 @@ section.featured-keyboards h1, section.featured_others h1{
     .image-slider{
         height: 50vh;
     }
+    .all-products-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-around;
+    }
+    .all-products-wrapper figure{
+        padding-left: 1rem;
+    }
 }
 
 
@@ -196,6 +288,7 @@ section.featured-keyboards h1, section.featured_others h1{
 @media (max-width: 480px){
     html{
         font-size: 6px;
+        overflow-x: hidden;
     }
     .featured-keyboards .figures-wrapper, .featured_mouses .figures-wrapper, .featured_others .figures-wrapper{
         display: grid;
@@ -203,5 +296,16 @@ section.featured-keyboards h1, section.featured_others h1{
         column-gap: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+    .section-move-controller{
+        width: 100%;
+        margin: 0;
+    }
+    .all-products-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .all-products-wrapper figure{
+        padding-left: 1rem;
     }
 }

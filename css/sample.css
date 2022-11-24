@@ -1,8 +1,6 @@
-html{
-    font-size: 10px;
-    overflow: hidden;
-}
-section.main-all-products h1{
+
+/*section for showing all products*/
+main.main-all-products h1{
     font-size: 4rem;
     text-align: center;
 }
@@ -20,6 +18,13 @@ section.main-all-products h1{
     border: 1px solid rgb(43, 123, 214);
 }
 .section-move-controller button:hover{
+    background-color: rgb(212, 94, 94);
+    color: white;
+    transition: 0.4s;
+    border: none;
+    transform: scale(1.1);
+}
+.section-move-controller button.active{
     background-color: rgb(212, 94, 94);
     color: white;
     transition: 0.4s;

@@ -11,10 +11,10 @@
   <section class="main-all-products">
     <h1>All products</h1>
     <div class="section-move-controller">
-      <button>keyboards</button>
-      <button>computer mouses</button>
-      <button>headphones</button>
-      <button>others</button>
+      <button id="keyboard">keyboards</button onclick="margin_move1()">
+      <button id="mouse">computer mouses</button onclick="margin_move2()">
+      <button id="headphone">headphones</button onclick="margin_move3()">
+      <button id="others">others</button onclick="margin_move4()">
     </div>
     <hr>
     <div class="all-products-wrapper" id="object-of-move">
@@ -211,11 +211,11 @@
       </figure>
     </div>
     <div class="controls-wrapper">
-      <input type="radio" name="radio-btn" id="radio-btn1">
-      <input type="radio" name="radio-btn" id="radio-btn2">
-      <input type="radio" name="radio-btn" id="radio-btn3">
-      <input type="radio" name="radio-btn" id="radio-btn4">
-      <input type="radio" name="radio-btn" id="radio-btn5">
+      <input type="radio" name="radio-btn" id="radio-btn1" onclick="margin_move1()">
+      <input type="radio" name="radio-btn" id="radio-btn2" onclick="margin_move2()">
+      <input type="radio" name="radio-btn" id="radio-btn3" onclick="margin_move3()">
+      <input type="radio" name="radio-btn" id="radio-btn4" onclick="margin_move4()">
+      <input type="radio" name="radio-btn" id="radio-btn5" onclick="margin_move5()">
     </div>
   </section>
 <script src="../js/sample.js"></script>

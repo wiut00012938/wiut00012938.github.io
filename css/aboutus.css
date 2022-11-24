@@ -210,7 +210,7 @@ header nav.active{
     color: white;
     font-size: 2rem;
 }
-.mobile-nav a:hover{
+.mobile-nav a:hover, .mobile-nav a.active{
     transform: scale(110%);
     color: darkblue;
     transition: 0.4s;
@@ -423,6 +423,9 @@ main{
     padding: 1rem;
     border-radius: 0.5rem;
 }
+.news-receiving form span{
+    background-color: #2573ef;
+}
 .news-receiving form .btn:hover{
     background-color: #2573ef;
     transition: 0.4s;
@@ -527,15 +530,17 @@ footer .brands ul li a , .quick-links li a, .social-links li a{
     color: var(--black);
 }
 .social-links{
-    max-width: 20%;
     display: flex;
     flex-direction: column;
 }
-.social-links a{
+.social-links ul li a{
     font-size: 2rem;
 }
-.social-links a i{
+.social-links ul li a i{
     color: black;
+}
+.social-links ul li{
+    list-style: none;
 }
 .social-links h1{
     text-decoration: none;
@@ -653,6 +658,10 @@ footer .brands ul li a , .quick-links li a, .social-links li a{
     }
     footer h1.active + p{
         display: block;
+    }
+    .btn_nav{
+        display: block;
+        position: fixed;
     }
 }
 

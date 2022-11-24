@@ -1,3 +1,4 @@
+/*pop-up of search*/
 searchForm = document.querySelector('.search');
 
 document.querySelector("#search-btn").onclick = () =>{
@@ -53,3 +54,10 @@ button3.addEventListener('click', function(){
   document.getElementById("second").classList.remove("active");
   document.getElementById("third").classList.toggle("active");
 })
+/*accordion*/
+const accordion = document.getElementsByClassName('accordion-trigger');
+for(i = 0; i < accordion.length ; i++){
+  accordion[i].addEventListener('click', function(){
+    this.classList.toggle('active');
+  })
+}

@@ -5,9 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/unit_sample.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d638520dfa.js" crossorigin="anonymous"></script>
+    <title>Laptop</title>
 </head>
 <body>
+    <header>
+        <div class="warning"><p>This website was created to fulfill Web Technology
+        module’s requirements and does not represent an actual company or service</p> </div>
+
+        <div class="first_header">
+            <a href="home.html"><img src="../images/logo.svg" alt="company_logo"></a>
+
+            <div class="search">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Search" id="mysearch">
+              <i class="fa-sharp fa-solid fa-xmark" onclick="document.getElementById('mysearch').value = ''"></i>
+            </div>
+            <!--3 additional links-->
+            <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                <div class="appear_text">
+                    <p>favourite products</p>
+                    <a href="favourite.html" class="fas fa-heart"></a>
+                </div>
+
+                <div class="appear_text">
+                    <p>see bucket</p>
+                    <a href="favourite.html" class="fas fa-shopping-cart"></a>
+                </div>
+
+                <div class="appear_text">
+                    <p>customer account</p>
+                    <div id="login-btn" class="fas fa-user"><a href="account.html"></a></div>
+                </div>
+            </div>
+            <!--button for mobile devices for opening nav bar-->
+            <a class="btn_nav">
+                <div class="menulogo"></div>
+                <div class="menulogo"></div>
+                <div class="menulogo-animated"></div>
+            </a>
+        </div>
+        <!--nav bar for tablets and desctops-->
+        <nav>
+            <a href="home.html" >home</a>
+            <a href="connector.html" class="active">Laptops</a>
+            <a href="accessuars.html">Accessuares</a>
+            <a href="hotproducts.html">What's hot</a>
+            <a href="support.html">Support</a>
+            <a href="aboutus.html">About us</a>
+        </nav>
+    </header>
+    <!--nav bar for mobile version-->
+    <nav class="mobile-nav">
+        <a href="home.html" >Home</a>
+        <a href="connector.html" class="active">Laptops</a>
+        <a href="accessuars.html">Accessuars</a>
+        <a href="hotproducts.html">What's hot</a>
+        <a href="support.html">Support</a>
+        <a href="aboutus.html">About us</a>
+    </nav>
     <main>
         <div class="image-handler">
             <img src="../images/arrival1.jpg" alt="main-image" id="main-image">
@@ -67,6 +124,52 @@
               </table>
         </table>
     </section>
+    <footer>
+        <div class="contacts">
+          <h1 class="accordion-trigger">Our contacts</h1>
+          <p>+998 93 123-45-67</p>
+          <p>+998 91 123-45-67</p>
+          <p>+998 90 123-45-67</p>
+          <h2>Working hours</h2>
+          <p>Mon-Sun: from 9:00 till 21:00</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.086413066146!2d69.28119061571486!3d41.306983708938134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad59297d1cf%3A0xda0402847aed7b96!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0JLQtdGB0YLQvNC40L3RgdGC0LXRgNGB0LrQuNC5INCj0L3QuNCy0LXRgNGB0LjRgtC10YIg0LIg0KLQsNGI0LrQtdC90YLQtQ!5e0!3m2!1sru!2s!4v1582265112793!5m2!1sru!2s" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="brands">
+          <h1 class="accordion-trigger">Availble brands of laptops</h1>
+          <ul>
+            <li><a href="connector.html">Acer</a></li>
+            <li><a href="connector.html">Honor</a></li>
+            <li><a href="connector.html">Asus</a></li>
+            <li><a href="connector.html">Razer</a></li>
+            <li><a href="connector.html">MSI</a></li>
+            <li><a href="connector.html">Lenovo</a></li>
+            <li><a href="connector.html">Samsung</a></li>
+            <li><a href="connector.html">DELL</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <h1 class="accordion-trigger">Quick links of the website</h1>
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="connector.html">Laptops</a></li>
+            <li><a href="accessuars.html">Accessuares</a></li>
+            <li><a href="hotproducts.html">What's hot</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="#daydeal">Deal of the day</a></li>
+            <li><a href="#arrivals">New arrivals</a></li>
+          </ul>
+          </div>
+          <div class="social-links">
+            <h1 class="accordion-trigger">Our social links</h1>
+            <ul>
+              <li><a href="https://t.me/notebookoff_uz"><i class="fa-brands fa-telegram"></i></a></li>
+              <li><a href="https://www.instagram.com/notebookoff_uz/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://notebookoff.uz/"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/notebookoffuzb"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+      </footer>
     <script src="../js/unit_sample.js"></script>
 </body>
 </html>

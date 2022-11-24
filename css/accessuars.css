@@ -39,6 +39,177 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background:var(--black);
 }
+.search
+{
+    position: relative;
+    max-width: 50%;
+    border: 1px solid #2573ef;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 6rem;
+}
+.search .fa-solid, .fa-sharp{
+    font-size: 4rem;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .fa-sharp{
+    padding-right: 1rem;
+  }
+  .fa-solid{
+    padding-left: 1rem;
+  }
+  .search button{
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+  }
+  .search input{
+    border: none;
+    width: 70%;
+    height: 5.5rem;
+    outline: none;
+    font-size: 2rem;
+  }
+  .search button .fa-solid:hover{
+    color: #2573ef;
+    transition: 0.4s;
+  }
+/*icons styling*/
+header .first_header .icons .appear_text div, header .first_header .icons .appear_text a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+#search-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+#search-btn:hover{
+    color: var(--blue);
+}
+.appear_text p{
+    display: none;
+    position: absolute;
+    top: 30px;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+header .first_header .icons .appear_text div:hover, header .first_header .icons .appear_text a:hover{
+    color:var(--blue)
+}
+.first_header .icons .appear_text{
+    position: relative;
+}
+.first_header .icons .appear_text:hover p, .first_header .icons .appear_text:hover p{
+    display: block;
+}
+header .first_header{
+    background: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .first_header .icons{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+header .first_header .icons .appear_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    background: var(--blue);
+    text-align: center;
+    box-shadow: 0px 13px 8px 0px rgba(73, 146, 202, 0.2);
+}
+header nav a{
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+header nav a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:  #ff9501;
+    display: block;
+    margin: auto;
+}
+header nav a:hover::after, header nav a.active::after{
+    width:  100%;
+    transition: 0.4s;
+}
+header nav.active{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.btn_nav{
+    width: 30px;
+    margin: 1rem 0;
+    display: none;
+}
+.btn_nav div{
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 4px 0;
+    width: 20px;
+    display: block;
+}
+.btn_nav:hover .menulogo-animated{
+    transform: scaleX(60%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.mobile-nav{
+    width: 50%;
+    height: 100vh;
+    background-color: #297eff;
+    padding: 5rem;
+    position: absolute;
+    z-index: 1000;
+    transform: translateX(-150%);
+    transition: 0.5s;
+}
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+}
+.mobile-nav a{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+.mobile-nav a:hover, .mobile-nav a.active{
+    transform: scale(110%);
+    color: darkblue;
+    transition: 0.4s;
+}
+.mobile-nav.active-menu{
+    transform: translateX(0);
+    transition: 0.4s;
+    position: fixed;
+}
 /* image slider constructing. this image slider was built by watching the tutorial: https://youtu.be/9A9Vc0jVDLU. Compared to other things of the website that was referenced and higlight that only design was gotten and code was written by the autoher himself, this section was built by watching tutorial and the code is quite similar to the tutorial. The main reason for that - webkit-appearance and croping was not familiar before */
 .image-slider{
     height: 80vh;
@@ -233,7 +404,59 @@ main.main-all-products h1{
 .all-products-wrapper figure div:hover p{
     visibility: visible;
 }
-
+/*footer*/
+footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #B2FFFF;
+}
+footer  .contacts{
+    padding-left: 2rem;
+}
+footer .contacts h1, .brands h1, .quick-links h1, .social-links h1{
+    font-size: 3.5rem;
+}
+footer .contacts h2{
+    font-size: 2.5rem;
+}
+footer .contacts p, .brands li, .quick-links li{
+    font-size: 2rem;
+}
+footer .contacts iframe{
+    width: 100%;
+}
+footer .brands ul li, .quick-links ul li{
+    padding-bottom: 2rem;
+    list-style-type: none;
+}
+footer .brands ul li a , .quick-links li a, .social-links ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+/*social links styling*/
+.social-links{
+    display: flex;
+    flex-direction: column;
+}
+.social-links ul li a{
+    font-size: 2rem;
+}
+.social-links ul li a i{
+    color: black;
+}
+.social-links h1{
+    text-decoration: none;
+    color: black;
+}
+.social-links ul li{
+    list-style: none;
+}
+.brands li:hover, .quick-links li:hover, .social-links ul li a:hover{
+    transform: translateX(10%);
+    transition: 0.4s;
+    color: #287dfc;
+}
 
 
 
@@ -256,7 +479,9 @@ main.main-all-products h1{
     html{
         font-size: 8px;
     }
-
+    header img{
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px){
@@ -280,6 +505,60 @@ main.main-all-products h1{
     }
     .all-products-wrapper figure{
         padding-left: 1rem;
+    }
+    #search-btn{
+        display: inline-block;
+    }
+    header .first_header .search{
+        position: absolute;
+        top: -10%;
+        right: 20%;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+        z-index: 1000;
+    }
+    header .first_header .search.active{
+        top: 30%;
+    }
+    header .wrapper{
+        display: inline-block;
+    }
+    header nav{
+        display: none;
+    }
+    .btn_nav{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer ul{
+        display: none;
+    }
+    footer p{
+        display: none;
+    }
+    footer h1{
+        background-color: white;
+        opacity: 0.6;
+        border: 1px solid black;
+    }
+    footer h1::after{
+    content: "+";
+    font-size: 3rem;
+    position: absolute;
+    top: 2;
+    right: 5%;
+    }
+    footer h1.active + ul{
+        display: block;
+    }
+    footer h1.active + p{
+        display: block;
+    }
+    .btn_nav{
+        display: block;
+        position: fixed;
     }
 }
 

@@ -207,7 +207,7 @@ header nav.active{
     color: white;
     font-size: 2rem;
 }
-.mobile-nav a:hover{
+.mobile-nav a:hover, .mobile-nav a.active{
     transform: scale(110%);
     color: darkblue;
     transition: 0.4s;
@@ -293,7 +293,7 @@ main figure a img, .table2 figure a img, .table3 figure a img{
     border-top-right-radius: 1rem;
     transition: 0.5s all ease-in-out;
 }
-main figure, .table2 figure, .table3{
+main figure, .table2 figure, .table3 figure{
     margin-left: 5%;
     margin-top: 5%;
 }
@@ -397,14 +397,16 @@ footer .brands ul li a , .quick-links li a, .social-links li a{
     color: var(--black);
 }
 .social-links{
-    max-width: 20%;
     display: flex;
     flex-direction: column;
 }
-.social-links a{
+.social-links li{
+    list-style: none;
+}
+.social-links li a{
     font-size: 2rem;
 }
-.social-links a i{
+.social-links li a i{
     color: black;
 }
 .social-links h1{
@@ -493,9 +495,19 @@ footer .brands ul li a , .quick-links li a, .social-links li a{
         position: static;
     }
     main{
+        margin-bottom: 2rem;
+        justify-content: center;
         margin-left: 0;
     }
     section{
+        margin-bottom: 2rem;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .table2{
+        margin-left: 0;
+    }
+    .list_control{
         margin-left: 0;
     }
     footer{

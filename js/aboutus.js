@@ -1,3 +1,4 @@
+/*pop-up search form for mobile*/
 searchForm = document.querySelector('.search');
 
 document.querySelector("#search-btn").onclick = () =>{

@@ -149,7 +149,7 @@ header nav a::after{
     display: block;
     margin: auto;
 }
-header nav a:hover::after{
+header nav a:hover::after, header nav a.active{
     width:  100%;
     transition: 0.4s;
 }
@@ -200,7 +200,7 @@ header nav.active{
     color: white;
     font-size: 2rem;
 }
-.mobile-nav a:hover{
+.mobile-nav a:hover, .mobile-nav a.active{
     transform: scale(110%);
     color: darkblue;
     transition: 0.4s;
@@ -323,10 +323,10 @@ section.statistical_comparison{
   border-top: 1px solid rgb(31, 118, 248);
 }
 .statistical_comparsion h1{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .statistical_comparsion h2{
-  font-weight: 2rem;
+  font-weight: 3rem;
 }
 .bars-wrapper{
   padding-top: 4rem;
@@ -400,30 +400,33 @@ footer .contacts p, .brands li, .quick-links li{
 footer .contacts iframe{
   width: 100%;
 }
-footer .brands ul li, .quick-links li{
+footer .brands ul li, .quick-links ul li{
   padding-bottom: 2rem;
   list-style-type: none;
 }
-footer .brands ul li a , .quick-links li a, .social-links li a{
+footer .brands ul li a , .quick-links li a, .social-links ul li a{
   text-decoration: none;
   color: var(--black);
 }
+/*social links styling*/
 .social-links{
-  max-width: 20%;
   display: flex;
   flex-direction: column;
 }
-.social-links a{
+.social-links ul li a{
   font-size: 2rem;
 }
-.social-links a i{
+.social-links ul li a i{
   color: black;
 }
 .social-links h1{
   text-decoration: none;
   color: black;
 }
-.brands li:hover, .quick-links li:hover, .social-links a:hover{
+.social-links ul li{
+  list-style: none;
+}
+.brands li:hover, .quick-links li:hover, .social-links ul li a:hover{
   transform: translateX(10%);
   transition: 0.4s;
   color: #287dfc;
@@ -511,6 +514,11 @@ header img{
   footer h1.active + p{
       display: block;
   }
+  .btn_nav{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+}
 }
 @media (max-width: 480px){
   html{

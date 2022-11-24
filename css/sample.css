@@ -1,0 +1,57 @@
+html{
+    font-size: 10px;
+    overflow: hidden;
+}
+section.main-all-products h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.section-move-controller{
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.section-move-controller button{
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid rgb(43, 123, 214);
+}
+.section-move-controller button:hover{
+    background-color: rgb(212, 94, 94);
+    color: white;
+    transition: 0.4s;
+    border: none;
+    transform: scale(1.1);
+}
+.all-products-wrapper{
+    width: 500%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.all.all-products-wrapper.first{
+    margin-left: -100%;
+}
+.all-products-wrapper figure{
+    margin-right: 1rem;
+}
+.all-products-wrapper figure a img{
+    width: 55rem;
+    height: 40rem;
+}
+.controls-wrapper{
+    padding-top: 2rem;
+    text-align: center;
+    background-color: aliceblue;
+    padding-bottom: 2rem;
+}
+.controls-wrapper input{
+    transform: scale(2);
+    margin: 1rem;
+}
+.controls-wrapper input:hover{
+    background-color: rgb(54, 149, 228);
+}

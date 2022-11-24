@@ -340,7 +340,7 @@ section{
     justify-content: center;
     border-radius: 20px;
 }
-.new-arrivals button{
+.new-arrivals a{
     padding: 2rem;
     font-size: 2rem;
     position: relative;
@@ -351,7 +351,7 @@ section{
     margin-bottom: 20px;
     left: 40%;
 }
-.new-arrivals button:hover, .poster-message button:hover{
+.new-arrivals a:hover, .poster-message button:hover{
     background-color: #2573ef;
     color: white;
     transition: 0.4s;
